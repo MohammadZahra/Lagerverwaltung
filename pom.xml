@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>torvalds</groupId>
+  <artifactId>WarehouseManager</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>WarehouseManager</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java-source-version>15</java-source-version>
+    <java-target-version>15</java-target-version>
+    <javafx-version>15.0.1</javafx-version>
+    <junit-version>4.12</junit-version>
+    
+    <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
+  	<javafx-maven-plugin-version>0.0.5</javafx-maven-plugin-version>
+  	
+  	<hibernate-core-version>5.4.27.Final</hibernate-core-version>
+  	<mysql-connector-java-version>8.0.23</mysql-connector-java-version>
+  	
+  	<lucene-core-version>8.8.1</lucene-core-version>
+  	<lucene-queryparser-version>8.8.1</lucene-queryparser-version>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven-compiler-plugin-version}</version>
+        <configuration>
+          <source>${java-source-version}</source>
+          <target>${java-target-version}</target>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+	        <groupId>org.openjfx</groupId>
+	        <artifactId>javafx-maven-plugin</artifactId>
+	        <version>${javafx-maven-plugin-version}</version>
+	        <configuration>
+	            <mainClass>torvalds.WarehouseManager.javafx.controllers.MainApplication</mainClass>
+	        </configuration>
+    	</plugin>
+    </plugins>
+  </build>
+  
+  <dependencies>
+    <dependency>
+	    <groupId>org.openjfx</groupId>
+	    <artifactId>javafx-controls</artifactId>
+	    <version>${javafx-version}</version>
+	</dependency>
+    
+    <dependency>
+	    <groupId>org.openjfx</groupId>
+	    <artifactId>javafx-fxml</artifactId>
+	    <version>${javafx-version}</version>
+	</dependency>
+    
+    <dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>${junit-version}</version>
+	    <scope>test</scope>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>${hibernate-core-version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>${mysql-connector-java-version}</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>org.apache.lucene</groupId>
+	    <artifactId>lucene-core</artifactId>
+	    <version>${lucene-core-version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.apache.lucene</groupId>
+	    <artifactId>lucene-queryparser</artifactId>
+	    <version>${lucene-queryparser-version}</version>
+	</dependency>
+	
+  </dependencies>
+</project>

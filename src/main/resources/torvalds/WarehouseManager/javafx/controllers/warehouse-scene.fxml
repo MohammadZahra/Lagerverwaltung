@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="323.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="8.0" layoutY="9.0" prefHeight="256.0" prefWidth="313.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="121.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="164.0" minWidth="10.0" prefWidth="164.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="44.0" minHeight="5.0" prefHeight="44.0" />
+          <RowConstraints maxHeight="78.0" minHeight="8.0" prefHeight="38.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="157.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Street" GridPane.rowIndex="1" />
+            <Label text="Number" GridPane.rowIndex="2" />
+            <Label prefHeight="17.0" prefWidth="39.0" text="City" GridPane.rowIndex="3" />
+            <Label text="Postcode" GridPane.rowIndex="4" />
+            <Label prefHeight="22.0" prefWidth="115.0" text="Warehouse Number" />
+            <TextField fx:id="txtWarehouseNumber" GridPane.columnIndex="1" />
+            <TextField fx:id="txtStreet" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtNumber" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtCity" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtPostcode" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Country" GridPane.rowIndex="5" />
+            <TextField fx:id="txtCountry" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <ButtonBar layoutX="61.0" layoutY="221.0" prefHeight="25.0" prefWidth="142.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0">
+        <buttons>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#btnOKClicked" text="OK" />
+            <Button defaultButton="false" mnemonicParsing="false" onAction="#btnCancelClicked" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+      
+   </children>
+</AnchorPane>

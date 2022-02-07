@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="149.0" prefWidth="284.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="btnCancel" layoutX="132.0" layoutY="104.0" mnemonicParsing="false" onMouseClicked="#btnCancelClicked" text="Cancel" />
+      <TextField fx:id="txtPercentage" layoutX="99.0" layoutY="9.0" prefHeight="26.0" prefWidth="103.0" />
+      <Label fx:id="txtLabel" layoutX="24.0" layoutY="14.0" text="Percentage:" />
+      <RadioButton fx:id="btnIncrease" layoutX="27.0" layoutY="63.0" mnemonicParsing="false" text="Increase" />
+      <RadioButton fx:id="btnDecrease" layoutX="120.0" layoutY="63.0" mnemonicParsing="false" text="Decrease" />
+      <Button defaultButton="true" layoutX="35.0" layoutY="104.0" mnemonicParsing="false" onMouseClicked="#btnOKClicked" text="OK" />
+   </children>
+</AnchorPane>
